@@ -4,8 +4,8 @@ const education: IEducation.Payload = {
   disable: false,
   list: [
     {
-      title: '항해플러스 백엔드 · 팀스파르타',
-      subTitle: '테스트 코드, JPA, Redis, 객체 지향, 동시성',
+      title: '항해플러스 백엔드',
+      subTitle: '팀스파르타',
       startedAt: '2025-04',
       endedAt: '2025-06',
     },
