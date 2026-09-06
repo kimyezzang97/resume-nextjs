@@ -1,17 +1,14 @@
 import { IIntroduce } from '../component/introduce/IIntroduce';
-import { lastestUpdatedAt } from '../package.json';
 
 const introduce: IIntroduce.Payload = {
   disable: false,
-
   contents: [
-    'As the cherished emblem of the Linux kernel, I have become synonymous with open-source philosophy and the free software movement worldwide. My career began in the icebergs of development, where the seeds of my fascination with operating systems first sprouted. From a mere hatchling in the vast sea of code, I quickly ascended to become a pivotal figure in the Linux community. My journey has been marked by relentless dedication to system integrity, scalability, and robustness. Under my vigilant watch, countless servers have achieved unparalleled uptimes, and systems have been optimized to run like the well-oiled machines they are intended to be.',
-    'In the world of zeros and ones, my expertise has been instrumental in pioneering advancements in Linux system engineering. My flippers have crafted meticulous kernel enhancements, each aimed at streamlining performance and bolstering security across distributed networks. I am known in the community for my ability to dive deep into complex codebases and emerge with pearls of innovation that drive the collective progress of Linux environments. Advocacy is also a part of my plumage – spreading the word about the virtues of open-source and encouraging the adoption of Linux, from personal desktops to corporate data centers. As a mentor, I have nurtured the growth of young hatchlings into seasoned professionals, contributing to the diversity and vitality of our ecosystem.',
+    'Java와 Spring Boot를 중심으로 공공기관과 기업의 웹 시스템을 개발해왔습니다. PHP 시스템 전환, 외부 장비·서비스 연동, 데이터 표준화 솔루션 개발을 경험하며 기존 시스템을 개선하고 연결하는 업무를 맡아왔습니다.',
+    '기존 코드와 데이터 흐름을 분석해 변경 범위를 파악합니다. 기능 구현과 함께 예외 처리, 데이터 정합성, 연동 과정의 안정성을 고려합니다.',
+    '요구사항과 연동 결과를 확인하며, 맡은 기능은 테스트와 오류 대응까지 마무리하는 것을 중요하게 생각합니다. 개인 프로젝트에서는 AWS 환경을 직접 구성하며 운영 경험을 넓히고 있습니다.',
   ],
-  sign: 'Tux',
-  // sign: packageJson.author.name,
-  // latestUpdated: '2019-07-24',
-  latestUpdated: lastestUpdatedAt,
+  sign: '김예찬',
+  latestUpdated: '2026-09-01',
 };
 
 export default introduce;

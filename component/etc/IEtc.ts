@@ -9,6 +9,7 @@ export declare namespace IEtc {
    * @example https://github.com/uyu423/resume-nextjs/blob/master/payload/etc.ts
    */
   export interface Payload extends ICommon.Payload {
+    title?: string;
     /** ### 기타 항목 리스트 */
     list: Item[];
   }

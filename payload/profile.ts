@@ -1,44 +1,19 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-import { faBell } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import image from '../asset/profile.jpg';
 import { IProfile } from '../component/profile/IProfile';
-import image from '../asset/sample_tux.png';
 
 const profile: IProfile.Payload = {
   disable: false,
-
-  // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
   image,
-  name: {
-    title: 'Tux Linux Penguin',
-    small: '(Tux)',
-  },
+  name: { title: '김예찬', small: '백엔드 개발자' },
   contact: [
-    {
-      title: 'tux@linux.org',
-      link: 'mailto:tux@linux.org',
-      icon: faEnvelope,
-    },
-    {
-      title: 'Please contact me by email',
-      icon: faPhone,
-      badge: true,
-    },
-    {
-      link: 'https://github.com/uyu423/resume-nextjs',
-      icon: faGithub,
-    },
-    {
-      link: 'https://www.facebook.com/groups/ubuntu.ko',
-      icon: faFacebook,
-    },
+    { title: 'wwww0510@naver.com', link: 'mailto:wwww0510@naver.com', icon: faEnvelope },
+    { title: 'Please contact me by email', icon: faPhone },
+    { title: 'github.com/kimyezzang97', link: 'https://github.com/kimyezzang97', icon: faGithub },
+    { title: '1997년생 · 남', icon: faUser },
   ],
-  notice: {
-    title:
-      "The content below is all fictitious and is just a sample from 'https://github.com/uyu423/resume-nextjs'.",
-    icon: faBell,
-  },
+  notice: { title: '' },
 };
 
 export default profile;

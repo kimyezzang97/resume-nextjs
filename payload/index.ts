@@ -8,6 +8,7 @@ import presentation from './presentation';
 import education from './education';
 import article from './article';
 import etc from './etc';
+import license from './license';
 import footer from './footer';
 
 import { _global } from './_global';
@@ -35,6 +36,7 @@ const Payload: Payload = {
   presentation,
   article,
   education,
+  license,
   etc,
   footer,
 
@@ -51,6 +53,7 @@ interface Payload {
   presentation: IPresentation.Payload;
   education: IEducation.Payload;
   article: IArticle.Payload;
+  license: IEtc.Payload;
   etc: IEtc.Payload;
   footer: IFooter.Payload;
 
