@@ -3,13 +3,12 @@ import { IEducation } from '../component/education/IEducation';
 const education: IEducation.Payload = {
   disable: false,
   list: [
-    // 설로인 제거
-    // {
-    //   title: '항해플러스 백엔드 · 팀스파르타',
-    //   subTitle: '테스트 코드, JPA, Redis, 객체 지향, 동시성',
-    //   startedAt: '2025-04',
-    //   endedAt: '2025-06',
-    // },
+    {
+      title: '항해플러스 백엔드 · 팀스파르타',
+      subTitle: '테스트 코드, JPA, Redis, 객체 지향, 동시성',
+      startedAt: '2025-04',
+      endedAt: '2025-06',
+    },
     {
       title: '한양사이버대학교',
       subTitle: '컴퓨터공학과',
