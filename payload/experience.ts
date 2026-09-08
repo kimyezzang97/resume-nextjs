@@ -9,12 +9,13 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '데이터아크팀/선임연구원, Web Developer',
+          summary: '코오롱 데이터 솔루션 커스텀 개발',
           startedAt: '2026-03',
           endedAt: '2026-09',
           descriptions: [
-            '데이터 표준화 솔루션 커스텀 개발 및 기술 환경 업그레이드',
-            '표준단어·도메인·표준용어 관리 기능 개발',
-            'Ext JS 기반 관리 화면 수정 및 Spring Boot 백엔드 API 연동',
+            '코오롱 데이터웨어 META# 솔루션 업그레이드',
+            '기존 소스 구조와 주요 기능을 분석하고 신규 버전에 맞춰 코드 개선',
+            '전사 표준단어 관리 로직의 테스트 코드 작성',
           ],
           skillKeywords: ['Java', 'Spring Boot', 'MyBatis', 'PostgreSQL', 'Ext JS'],
         },
@@ -25,12 +26,13 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: 'DX사업부/사원, Web Developer',
+          summary: '삼성전자 내부 시스템 개발 및 경매 사이트 운영',
           startedAt: '2025-02',
           descriptions: [
-            '기업 내부 웹 시스템 개발 및 운영 사이트 유지보수',
-            'Spring Boot 기반 설문조사·공지사항 API 개발 및 Vue 화면 연동',
-            '삼성SDS LLM 팀과 협업하여 AI 기능 및 통합검색 인덱싱 연동',
-            'Spring·JSP 기반 웹 서비스 유지보수',
+            '삼성전자 내부 설문조사 시스템 개발',
+            '삼성SDS LLM 팀과 협업해 AI 기능 연동',
+            'SonarQube 정적 분석을 통한 코드 품질 점검',
+            '화동옥션 사이트 유지보수',
           ],
           skillKeywords: [
             'Java',
@@ -51,13 +53,13 @@ const experience: IExperience.Payload = {
       positions: [
         {
           title: '플랫폼사업부/연구원, Backend Developer',
+          summary: 'B2G 재난 예경보 플랫폼 백엔드 API 개발 및 유지보수',
           startedAt: '2022-09',
           descriptions: [
-            'B2G 재난 예·경보 플랫폼 백엔드 API 개발 및 유지보수',
-            'PHP 시스템의 Spring Boot 전환',
+            'PHP 프로젝트를 Spring Boot 기반 REST API로 전환',
             '외부 장비 및 공공 시스템 연동 개발',
-            'GS 인증 대응 및 보안 기능 개선',
-            'Linux 서버 초기 세팅 및 애플리케이션 실행 환경 구성',
+            'GS 인증 1등급 취득',
+            'Linux 서버 초기 세팅 및 실행 환경 구성',
           ],
           skillKeywords: [
             'Java',

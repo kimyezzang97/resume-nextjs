@@ -5,7 +5,7 @@ const license: IEtc.Payload = {
   title: 'LICENSE',
   list: [
     {
-      title: 'SQL 개발자',
+      title: 'SQLD',
       subTitle: '한국데이터산업진흥원',
       startedAt: '2026-09',
     },

@@ -92,6 +92,7 @@ export default function ExperienceRow({
           </Col>
           <Col sm={12} md={9}>
             <i style={Style.gray}>{position.title}</i>
+            {position.summary && <h5 className="mt-2 mb-0">{position.summary}</h5>}
             <ul className="pt-2">
               {position.descriptions.map((description, descIndex) => (
                 <li key={descIndex.toString()}>{description}</li>

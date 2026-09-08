@@ -27,6 +27,9 @@ export declare namespace IExperience {
     /** ### (직장)역할 명 (or Subtitle) */
     title: string;
 
+    /** ### (직장)주요 역할 요약 */
+    summary?: string;
+
     /**
      * ### (직장)경험 시작 일
      *
