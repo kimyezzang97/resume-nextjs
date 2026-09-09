@@ -41,6 +41,11 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
                       <li key={description}>{description}</li>
                     ))}
                   </ul>
+                  {section.code && (
+                    <pre className="bg-light p-3">
+                      <code>{section.code}</code>
+                    </pre>
+                  )}
                 </div>
               ))}
               {item.notes && (

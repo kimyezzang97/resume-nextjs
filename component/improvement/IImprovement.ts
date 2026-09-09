@@ -4,6 +4,7 @@ export declare namespace IImprovement {
   export interface Section {
     title: string;
     descriptions: string[];
+    code?: string;
   }
 
   export interface Item {
