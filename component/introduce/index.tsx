@@ -34,7 +34,17 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         </Col>
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
-            <p key={index.toString()}>{content}</p>
+            <p key={index.toString()}>
+              {content
+                .split(/(\*\*[^*]+\*\*)/g)
+                .map((part, partIndex) =>
+                  part.startsWith('**') && part.endsWith('**') ? (
+                    <strong key={partIndex.toString()}>{part.slice(2, -2)}</strong>
+                  ) : (
+                    part
+                  ),
+                )}
+            </p>
           ))}
           <p className="text-right">
             <small>Latest Updated</small>{' '}

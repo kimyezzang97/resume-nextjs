@@ -81,6 +81,36 @@ const improvement: IImprovement.Payload = {
       ],
       technologies: ['Java 8', 'JavaMail 1.6.7', 'Amazon SES', 'SMTP'],
     },
+    {
+      company: '삼성전자(토라웨어)',
+      title: 'LLM API 호출 비동기 전환',
+      summary: '처리 완료 후 응답 → DB에 작업 저장, 완료 결과 별도 조회',
+      sections: [
+        {
+          title: '문제',
+          descriptions: [
+            '설문 질문 생성·번역이 완료될 때까지 응답을 기다려야 해 LLM 처리 시간에 따라 사용자 대기 증가',
+            '대기 중 HTTP 요청 스레드와 연결을 점유해 장시간 요청이 동시에 쌓이면 다른 요청의 처리 여유가 줄어들 수 있는 구조',
+          ],
+        },
+        {
+          title: '원인',
+          descriptions: [
+            '요청 접수와 결과 반환이 하나의 동기 흐름으로 묶여 접수 응답 시점이 외부 LLM API 처리 시간에 종속',
+            'Spring 요청 스레드에서 LLM 서비스를 호출하고 완료 응답까지 대기',
+          ],
+        },
+        {
+          title: '해결',
+          descriptions: [
+            '작업 접수와 실행을 분리하고 DB에 작업을 저장한 뒤 HTTP 202로 접수 응답 반환',
+            'SQL 작업 큐 기반 비동기 처리와 완료 결과를 별도로 조회하는 API 추가',
+            '기존 동기 API를 유지해 비동기 방식과 비교할 수 있도록 구성',
+          ],
+        },
+      ],
+      technologies: ['Java 17', 'Spring Boot 3', 'PostgreSQL'],
+    },
   ],
 };
 
