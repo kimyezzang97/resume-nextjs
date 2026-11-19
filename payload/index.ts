@@ -26,7 +26,7 @@ import { IFooter } from '../component/footer/IFooter';
 import { IGlobal } from '../component/common/IGlobal';
 import { IArticle } from '../component/article/IArticle';
 
-const Payload: Payload = {
+const Payload: ResumePayload = {
   profile,
   introduce,
   skill,
@@ -43,7 +43,7 @@ const Payload: Payload = {
   _global,
 };
 
-export interface Payload {
+export interface ResumePayload {
   profile: IProfile.Payload;
   introduce: IIntroduce.Payload;
   skill: ISkill.Payload;

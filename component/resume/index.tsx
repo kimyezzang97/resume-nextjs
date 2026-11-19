@@ -15,9 +15,9 @@ import { Profile } from '../profile';
 import { Skill } from '../skill';
 import { Style } from '../common/Style';
 import { Article } from '../article';
-import { Payload } from '../../payload';
+import { ResumePayload } from '../../payload';
 
-export function ResumePage({ payload }: { payload: Payload }) {
+export function ResumePage({ payload }: { payload: ResumePayload }) {
   return (
     <>
       <NextSeo {...payload._global.seo} />

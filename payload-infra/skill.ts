@@ -5,12 +5,7 @@ const skill: ISkill.Payload = {
   skills: [
     {
       category: 'Infrastructure & Cloud',
-      items: [
-        { title: 'Linux' },
-        { title: 'AWS' },
-        { title: 'Amazon SES' },
-        { title: 'Docker' },
-      ],
+      items: [{ title: 'Linux' }, { title: 'AWS' }, { title: 'Amazon SES' }, { title: 'Docker' }],
     },
     {
       category: 'Network & Protocols',

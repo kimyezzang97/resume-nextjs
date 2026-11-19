@@ -1,4 +1,4 @@
-import BasePayload, { Payload } from '../payload';
+import BasePayload, { ResumePayload } from '../payload';
 
 import profile from './profile';
 import introduce from './introduce';
@@ -13,7 +13,7 @@ import { _global } from './_global';
  * 학력·자격증·기타 등 공통 항목은 기본 payload를 그대로 사용하고,
  * 직무에 따라 강조점이 달라지는 항목만 이 폴더에서 덮어쓴다.
  */
-const InfraPayload: Payload = {
+const InfraPayload: ResumePayload = {
   ...BasePayload,
   profile,
   introduce,
