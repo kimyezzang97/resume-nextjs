@@ -5,6 +5,22 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: true,
   list: [
     {
+      title: '에코벨',
+      positions: [
+        {
+          title: 'IoT 서비스 인프라 운영 및 개발',
+          summary: 'IoT 서비스 서버·스토리지 운영 및 웹 서비스 개발',
+          startedAt: '2026-10',
+          descriptions: [
+            '데이터센터 서버 관리',
+            'NAS 관리',
+            'React 프론트엔드 및 Django 백엔드 개발',
+          ],
+          skillKeywords: ['NAS', 'React', 'Django'],
+        },
+      ],
+    },
+    {
       title: '유니온시스템즈',
       positions: [
         {
